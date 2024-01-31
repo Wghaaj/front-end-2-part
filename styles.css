@@ -3,17 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-img {
-  max-width: 30%;
-}
-
-.container {
-  max-width: 100%;
-  margin-left: 1%;
-  margin-bottom: 1%;
-}
-
-ul{
-  padding-left: 2%;
-}
