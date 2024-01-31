@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comands used in terminal -- Hw1</title>
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/styles_register.css">
+    <script src="script.js"></script>
   </head>
   <body>
+    <form action="https://fom.in.ua/echo" method="get">
+      <h2>Register here</h2>
+      <label for="email"> Email:
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </label><br>
+      <label for="password">Password:
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+      </label> <br>
+      <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required> <br>
+
+    <button type="button" onclick="validateForm()">Register now</button>
+    </form>
     
   </body>
 </html>
