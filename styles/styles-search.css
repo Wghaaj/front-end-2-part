@@ -1,0 +1,28 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+.container-fluid {
+    margin-top: 4%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
+}
