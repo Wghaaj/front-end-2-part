@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("../images/background_for_carshop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding: 10% 5%;
+  border: solid white 1px ;
+  top: 18%;
+  left: 20%;
+  display: block;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+input {
+    background-color: inherit;
+    border: dashed white 1px;
+    padding: 2px 0px 2px 5px;
+    margin-top: 5%;
+    color: white;
+}
+
+#firstname {
+    margin-left: 7%;
+}
+
+#email {
+    margin-left: 19%;
+}
+
+#password {
+    margin-left: 10%;
+}
+
+button {
+    margin-top: 10%;
+    margin-left: 32%;
+    padding: 3%;
+    border: none;
+    background-color: white;
+}
+  
+  button:hover{
+    background-color: rgb(98, 96, 96);
+}
+
+@media screen and (min-width: 426px) {
+    .container {
+        left: 47%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .container {
+      left: 60%;
+      padding: 5%;
+    }
+  
+    input {
+      margin-top: 10%;
+    }
+  
+    button {
+      margin-top: 20%;
+      padding: 5%;
+      font-size: 14px;
+    }
+  
+  
+  }

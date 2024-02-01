@@ -18,7 +18,7 @@ form {
   padding: 10% 2%;
   border: solid white 1px ;
   top: 18%;
-  left: 10%;
+  left: 20%;
   display: block;
 }
 
@@ -44,6 +44,7 @@ input {
 
 button {
   margin-top: 10%;
+  margin-left: 32%;
   padding: 3%;
   border: none;
   background-color: white;
@@ -53,3 +54,32 @@ button:hover{
   background-color: rgb(98, 96, 96);
 }
 
+
+@media screen and (min-width: 426px) {
+  form {
+      left: 47%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    left: 60%;
+    padding: 5%;
+  }
+
+  .container {
+    margin-top: 20%;
+  }
+
+  input {
+    margin-top: 10%;
+  }
+
+  button {
+    margin-top: 20%;
+    padding: 5%;
+    font-size: 14px;
+  }
+
+
+}
