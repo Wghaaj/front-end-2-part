@@ -13,5 +13,4 @@ function validateForm() {
         return
     }
 
-    alert('Thank you! You completed your registration')
 }

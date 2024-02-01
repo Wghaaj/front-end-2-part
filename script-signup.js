@@ -14,8 +14,8 @@ function signUp() {
     localStorage.setItem("email", email)
     localStorage.setItem("password", password)
 
-    window.location.href = "index.html"
+    window.location.href = "sign_in.html"
 
-    alert("Thank you for sign up")
+    alert("Thank you for signing up")
 
 }
