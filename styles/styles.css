@@ -4,3 +4,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  --red: #D52047;
+  --light-blue: #EFF8F6;
+  --beige: #F9F7E8;
+}
+
+header {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F9F7E8;
+  ;
+}
+
+main {
+  margin-top: 2%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #F9F7E8;
+
+}
