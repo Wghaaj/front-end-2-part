@@ -54,6 +54,12 @@ button:hover{
   background-color: rgb(98, 96, 96);
 }
 
+@media screen and (max-width: 370px) {
+  #email, #password {
+    margin-left: 0%;
+  }
+}
+
 
 @media screen and (min-width: 426px) {
   form {

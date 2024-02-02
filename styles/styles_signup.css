@@ -17,7 +17,7 @@ html {
   position: absolute;
   padding: 10% 5%;
   border: solid white 1px ;
-  top: 18%;
+  top: 10%;
   left: 20%;
   display: block;
 }
@@ -56,6 +56,19 @@ button {
   
   button:hover{
     background-color: rgb(98, 96, 96);
+}
+
+.sign {
+  color: white;
+  margin-top: 10%;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 370px) {
+  #firstname, #password, #email {
+    margin-left: 0%;
+  }
 }
 
 @media screen and (min-width: 426px) {

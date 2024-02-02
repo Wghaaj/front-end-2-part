@@ -3,15 +3,13 @@
     padding: 0 auto;
     box-sizing: border-box;
 }
-
 .container {
-    width: 50%;
     height: 100%;
     display: block;
 }
 
-.container-fluid {
-    margin-top: 4%;
+header {
+    max-width: 100%;
 }
 
 .d-flex {
@@ -25,4 +23,35 @@ a {
 a:hover {
     cursor: pointer;
     color: red;
+}
+
+.search {
+    background-color: rgba(245, 173, 0, 1);
+    padding: 10% 5%;
+}
+
+#fuel, #gearbox {
+    max-width: 30%;
+}
+
+@media screen and (min-width: 426px) {
+    .search {
+        padding: 5%;
+    }
+    
+    label {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+        padding: 2% 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search {
+        padding: 2% 5%;
+    }
 }

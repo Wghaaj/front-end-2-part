@@ -13,4 +13,6 @@ function validateForm() {
         return
     }
 
+    window.location.href = "search.html"
+
 }
