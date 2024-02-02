@@ -34,6 +34,10 @@ a:hover {
     max-width: 30%;
 }
 
+label {
+    margin-top: 4%;
+}
+
 @media screen and (min-width: 426px) {
     .search {
         padding: 5%;
