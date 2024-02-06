@@ -51,28 +51,27 @@ header {
   padding-top: 1%;
 }
 
- nav { 
+nav { 
   max-width: var(--max-width);
-  margin: auto;
 }
 
 .d-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
 }
 
 .links {
-  margin: auto;
-  position: relative;
-  right: 20%;
+  display: flex; 
+  margin-right: 100%;
 }
 
 nav p {
   font-family: "Courgette", sans-serif;
   font-size: var(--common-font-size);
   line-height: 1.5;
+  margin-bottom: 0; 
   margin-right: var(--secondary-common-indentations);
-
 }
 
 nav span {
@@ -82,7 +81,7 @@ nav span {
 nav a {
   text-decoration: none;
   color: black;
-  margin: 0 15px; 
+  margin: 0 15px;
 } 
 
 
