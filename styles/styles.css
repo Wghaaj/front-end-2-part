@@ -4,3 +4,67 @@
   box-sizing: border-box;
 }
 
+:root {
+  --margins:64px
+}
+
+body {
+  background-color: #F3F5F6;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top:var(--margins);
+  margin-bottom: var(--margins);
+}
+
+.inner-text{
+  width: 390px;
+  flex-direction: column;
+  position: relative;
+  left: 11%;
+}
+
+.inner-text p:first-of-type {
+  padding-top: 32px;
+  font-size: 20px;
+}
+
+.inner-text p:nth-child(3) {
+  color: #3C3C43;
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.inner-images {
+  margin-right: 0;
+}
+
+.inner-images img:first-child {
+  margin-right: 30px;
+}
+
+.arrows img:first-child{
+  margin-right: 24px;
+}
+
+.arrows {
+  position: fixed;
+  bottom: 40%; 
+  left: 70.5%; 
+}
+
