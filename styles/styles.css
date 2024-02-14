@@ -58,7 +58,7 @@ body {
   margin-right: 30px;
 }
 
-.arrows img:first-child{
+/* .arrows img:first-child{
   margin-right: 24px;
 }
 
@@ -66,5 +66,22 @@ body {
   position: fixed;
   bottom: 40%; 
   left: 70.5%; 
+} */
+
+button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 40%;
+
+
+
 }
 
+#left-arrow {
+  right: 19%;
+}
+
+#right-arrow {
+  right: 10%;
+}
