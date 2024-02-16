@@ -76,10 +76,10 @@ button {
   position: var(--absolute);
 }
 
-#left-arrow {
+.left-arrow {
   right: 19%;
 }
 
-#right-arrow {
+.right-arrow {
   right: 10%;
 }
