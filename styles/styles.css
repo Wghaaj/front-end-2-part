@@ -5,7 +5,9 @@
 }
 
 :root {
-  --margins:64px
+  --margins:64px;
+  --absolute: absolute;
+  --relative: relative;
 }
 
 body {
@@ -35,7 +37,7 @@ body {
 .inner-text{
   width: 390px;
   flex-direction: column;
-  position: relative;
+  position: var(--relative);
   left: 11%;
 }
 
@@ -58,24 +60,20 @@ body {
   margin-right: 30px;
 }
 
-/* .arrows img:first-child{
-  margin-right: 24px;
+.top-40 {
+  top: 40%;
 }
 
-.arrows {
-  position: fixed;
-  bottom: 40%; 
-  left: 70.5%; 
-} */
+.play-button {
+  position: var(--absolute);
+  left:31.5%;
+  bottom: 36.5%;
+}
 
 button {
   border: none;
   background-color: transparent;
-  position: absolute;
-  top: 40%;
-
-
-
+  position: var(--absolute);
 }
 
 #left-arrow {
