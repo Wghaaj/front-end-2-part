@@ -6,8 +6,6 @@
 
 :root {
   --margins:64px;
-  --absolute: absolute;
-  --relative: relative;
 }
 
 body {
@@ -37,8 +35,20 @@ body {
 .inner-text{
   width: 390px;
   flex-direction: column;
-  position: var(--relative);
   left: 11%;
+  display: block;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+#man3 {
+  max-height: 465px;
 }
 
 .inner-text p:first-of-type {
@@ -54,6 +64,7 @@ body {
 
 .inner-images {
   margin-right: 0;
+  max-height: 358px;
 }
 
 .inner-images img:first-child {
@@ -65,15 +76,14 @@ body {
 }
 
 .play-button {
-  position: var(--absolute);
+  position: fixed;
   left:31.5%;
-  bottom: 36.5%;
+  bottom: 35.5%;
 }
 
 button {
   border: none;
   background-color: transparent;
-  position: var(--absolute);
 }
 
 .left-arrow {
@@ -82,4 +92,146 @@ button {
 
 .right-arrow {
   right: 10%;
+}
+
+@media screen and (max-width: 1363px) {
+  #man1 {
+    display: none;
+  }
+
+  .right-arrow {
+    right: 11%;
+  }
+
+  .left-arrow {
+    right: 21%;
+  }
+
+  .inner-images {
+    margin-right: 10%;
+  }
+
+  .play-button {
+    left: 36%;
+  }
+
+  .inner-text {
+    left: 14%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .play-button {
+    left: 37%;
+    bottom: 35.5%;
+  }
+
+  .inner-images {
+    margin-right: 5%;
+  }
+
+  .right-arrow {
+    right: 6%;
+  }
+
+  .left-arrow {
+    right: 17%;
+  }
+
+  .inner-text {
+    margin-top: 5%;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  .inner-text {
+    left: 5%;
+  }
+
+  .inner-image {
+    margin-right: 7%;
+  }
+
+  .play-button {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 1125px ) {
+  .inner-image {
+    margin-right: 3%;
+  }
+
+  .play-button {
+    left: 32%;
+  }
+
+  .inner-text {
+    left: 8%;
+  }
+
+  .left-arrow {
+    right: 18%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .inner-images {
+    margin-right: 0;
+  }
+
+  .inner-image {
+    margin-right: 6%;
+  }
+
+  .left-arrow {
+    right: 13%;
+  }
+
+  .right-arrow {
+    right: 1%
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .inner-image {
+    margin-right: 2%;
+  }
+
+  .play-button {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #man3, #man2 {
+    max-height: calc(90%);
+  }
+
+  .inner-image, .inner-images {
+    margin-right: 0;
+  }
+
+  .inner-text {
+    left: 5%;
+  }
+
+  .left-arrow {
+    right: 16%;
+  }
+
+  .right-arrow {
+    right: 3%;
+  }
+
+  .top-40 {
+    top: 42%;
+  }
+
+  .play-button {
+    bottom: 30.5%;
+    left: 33%;
+  }
+  
 }
