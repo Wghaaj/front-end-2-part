@@ -1,6 +1,6 @@
 * {
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -39,6 +39,10 @@ body {
   display: block;
 }
 
+.inner-image {
+  position: relative;
+}
+
 .pos-relative {
   position: relative;
 }
@@ -63,22 +67,36 @@ body {
 }
 
 .inner-images {
-  margin-right: 0;
+  gap: 30px;
   max-height: 358px;
+  display: flex;
 }
 
-.inner-images img:first-child {
-  margin-right: 30px;
+input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button, button {
+  padding: 0;
 }
+
+
+.arrows {
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  transform: translateX( -50% );
+  gap: 30px;
+}
+
+/* .inner-images img:first-child {
+  margin-right: 30px;
+} */
 
 .top-40 {
   top: 40%;
 }
 
 .play-button {
-  position: fixed;
-  left:31.5%;
-  bottom: 35.5%;
+  position: absolute;
+  left:0;
+  bottom: 0;
 }
 
 button {
@@ -86,13 +104,13 @@ button {
   background-color: transparent;
 }
 
-.left-arrow {
+/* .left-arrow {
   right: 19%;
 }
 
 .right-arrow {
   right: 10%;
-}
+} */
 
 @media screen and (max-width: 1363px) {
   #man1 {
