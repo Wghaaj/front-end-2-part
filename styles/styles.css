@@ -29,6 +29,7 @@ body {
   justify-content: space-between;
   margin-top:var(--margins);
   margin-bottom: var(--margins);
+  /* overflow: hidden; */
 }
 
 .d-block {
@@ -156,28 +157,51 @@ button {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .inner-text {
     left: 30%;
+    transform: translateX(-20%);
+    position: absolute;
+    font-size: 18px;
   }
 
-  .container{
-    overflow: hidden;
+  .container {
     flex-direction: column;
-    justify-content: center;
-
+    align-items: center;
+    margin-top: 32px;
   }
 
   #man3 {
     max-height: 428px;
     margin: 0 auto;
     position: relative;
-    bottom: 0;
-    top:0;
+    bottom:0;
+    top: 0;
   }
 
   .inner-image {
     margin: 0;
+  }
+
+  .inner-images {
+    flex-direction: row;
+    justify-content: center;
+    order: 1;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .arrows {
+    gap: 10px;
+  }
+
+  .inner-images img {
+    max-height: 208px;
+    max-width: 166px;
+  }
+
+  #man1 {
+    display: block;
   }
 }
 
