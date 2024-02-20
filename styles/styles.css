@@ -26,21 +26,17 @@ body {
 
 .container {
   max-width: 100%;
-  display: flex;
   justify-content: space-between;
   margin-top:var(--margins);
   margin-bottom: var(--margins);
 }
 
-.inner-text{
-  width: 390px;
-  flex-direction: column;
-  left: 11%;
+.d-block {
   display: block;
 }
 
-.inner-image {
-  position: relative;
+.d-flex {
+  display: flex;
 }
 
 .pos-relative {
@@ -51,8 +47,11 @@ body {
   position: absolute;
 }
 
-#man3 {
-  max-height: 465px;
+.inner-text{
+  max-width: 390px;
+  min-width: 390px;
+  left: 12vw;
+  z-index: 1;
 }
 
 .inner-text p:first-of-type {
@@ -66,10 +65,17 @@ body {
   padding-top: 8px;
 }
 
+#man3 {
+  max-height: 465px;
+}
+
 .inner-images {
   gap: 30px;
   max-height: 358px;
-  display: flex;
+}
+
+#man2 {
+  width: 282px;
 }
 
 input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button, button {
@@ -80,23 +86,21 @@ input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::
 .arrows {
   bottom: 0;
   left: 50%;
-  display: flex;
   transform: translateX( -50% );
   gap: 30px;
 }
 
-/* .inner-images img:first-child {
-  margin-right: 30px;
-} */
+.arrows img {
+  display: block;
+}
 
 .top-40 {
   top: 40%;
 }
 
 .play-button {
-  position: absolute;
-  left:0;
-  bottom: 0;
+  left: 1rem;
+  bottom: 1rem;
 }
 
 button {
@@ -104,159 +108,77 @@ button {
   background-color: transparent;
 }
 
-/* .left-arrow {
-  right: 19%;
-}
-
-.right-arrow {
-  right: 10%;
-} */
-
-@media screen and (max-width: 1363px) {
-  #man1 {
-    display: none;
-  }
-
-  .right-arrow {
-    right: 11%;
-  }
-
-  .left-arrow {
-    right: 21%;
-  }
-
-  .inner-images {
-    margin-right: 10%;
-  }
-
-  .play-button {
-    left: 36%;
-  }
-
+@media screen and (max-width: 1380px) {
   .inner-text {
-    left: 14%;
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .play-button {
-    left: 37%;
-    bottom: 35.5%;
-  }
-
-  .inner-images {
-    margin-right: 5%;
-  }
-
-  .right-arrow {
-    right: 6%;
-  }
-
-  .left-arrow {
-    right: 17%;
-  }
-
-  .inner-text {
-    margin-top: 5%;
-  }
-
-}
-
-@media screen and (max-width: 1150px) {
-  .inner-text {
-    left: 5%;
+    left: 15%;
   }
 
   .inner-image {
-    margin-right: 7%;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #man1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inner-image {
+    margin-right: 40px;
   }
 
-  .play-button {
+  #man2 {
+    margin-right: 24px;
+  }
+
+  .arrows {
+    transform: translateX(-54%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inner-text {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .inner-text {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .inner-text {
     left: 30%;
   }
 }
 
-@media screen and (max-width: 1125px ) {
-  .inner-image {
-    margin-right: 3%;
-  }
-
-  .play-button {
-    left: 32%;
-  }
-
+@media screen and (max-width: 425px) {
   .inner-text {
-    left: 8%;
+    left: 30%;
   }
 
-  .left-arrow {
-    right: 18%;
-  }
-}
+  .container{
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
 
-@media screen and (max-width: 1110px) {
-  .inner-images {
-    margin-right: 0;
+  }
+
+  #man3 {
+    max-height: 428px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    top:0;
   }
 
   .inner-image {
-    margin-right: 6%;
-  }
-
-  .left-arrow {
-    right: 13%;
-  }
-
-  .right-arrow {
-    right: 1%
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 1060px) {
-  .inner-image {
-    margin-right: 2%;
-  }
-
-  .play-button {
-    left: 35%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #man3, #man2 {
-    max-height: calc(90%);
-  }
-
-  .inner-image, .inner-images {
-    margin-right: 0;
-  }
-
-  .inner-text {
-    left: 5%;
-  }
-
-  .left-arrow {
-    right: 16%;
-  }
-
-  .right-arrow {
-    right: 3%;
-  }
-
-  .top-40 {
-    top: 42%;
-  }
-
-  .play-button {
-    bottom: 30.5%;
-    left: 33%;
-  }
-  
-}
-
-@media screen and (max-width: 990px) {
-  .play-button {
-    left: 32%;
-  }
-}
 
