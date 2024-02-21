@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
   margin-top:var(--margins);
   margin-bottom: var(--margins);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .d-block {
@@ -109,26 +109,20 @@ button {
   background-color: transparent;
 }
 
-@media screen and (max-width: 1380px) {
-  .inner-text {
-    left: 15%;
-  }
-
-  .inner-image {
-    margin-right: 30px;
-  }
-
+@media screen and (max-width: 1366px) {
   .container {
-    overflow: hidden;
+    margin-right: 1rem;
+  }
+
+  #man1 {
+    max-width:100%;
+    height:auto;
   }
 }
 
 @media screen and (max-width: 1100px) {
   #man1 {
     display: none;
-  }
-  .container {
-    overflow: hidden;
   }
 }
 
@@ -144,17 +138,11 @@ button {
   .arrows {
     transform: translateX(-54%);
   }
-  .container {
-    overflow: hidden;
-  }
 }
 
 @media screen and (max-width: 800px) {
   .inner-text {
     left: 20%;
-  }
-  .container {
-    overflow: hidden;
   }
 }
 
@@ -162,21 +150,16 @@ button {
   .inner-text {
     left: 25%;
   }
-  .container {
-    overflow: hidden;
-  }
 }
 
 @media screen and (max-width: 470px) {
   .inner-text {
     left: 30%;
   }
-  .container {
-    overflow: hidden;
-  }
-}
 
-@media screen and (max-width: 600px) {
+} 
+
+ @media screen and (max-width: 600px) {
   .inner-text {
     left: 30%;
     transform: translateX(-20%);
@@ -221,9 +204,6 @@ button {
 
   #man1 {
     display: block;
-  }
-  .container {
-    overflow: hidden;
   }
 }
 
