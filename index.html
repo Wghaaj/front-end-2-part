@@ -8,41 +8,97 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <section>
-      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold"> Custom Jumbotron</h1>
-          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-          <button class="btn btn-primary-btn-lg" type="button">Example button</button>
+    <main>
+      <section class="mb-2">
+        <div class="jumbotron max-width">
+          <h2>Placeholder jumbotron</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nostrum animi rerum temporibus expedita. Harum cupiditate necessitatibus dolores sapiente alias?</p>
+          <button>Call to action</button>
         </div>
+      </section>
+      <section class="bg-body-tertiary"> 
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/heroes.png" class="d-block mx-lg-auto img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h2>
+              <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="max-width">
+        <div class="row row-cols-1 row-cols-md-3 g-4 max-width mt-2">
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="StageManager">
+              <div class="card-body">
+                <h5 class="card-title">Featured title</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est libero voluptatem rem vero, ullam ex!</p>
+              </div>
+              <div class="btn">
+                <button>Call to action</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="Contacts">
+              <div class="card-body">
+                <h5 class="card-title">Featured title</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident quos numquam quae repellendus? Debitis!</p>
+              </div>
+              <div class="btn">
+                <button>Call to action</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="Settings">
+              <div class="card-body">
+                <h5 class="card-title">Featured title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, illum impedit officia minima natus pariatur.</p>
+              </div>
+              <div class="btn">
+                <button>Call to action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="center">
+       <a href="second-page.html" class="btn btn-outline-primary"> Go to page 2 > </a>
+
       </div>
-    </section>
-
-
-
-
-
-
-
-
-<footer class="bg-body-tertiary"></footer>
+    </main>
+  <footer class="bg-body-tertiary"></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 

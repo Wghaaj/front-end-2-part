@@ -1,0 +1,45 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    height: 100%;
+    flex-direction: column;
+  }
+  
+main {
+    flex-grow: 1;
+    margin-top: 3rem;
+}
+
+.max-width {
+    max-width: 80vw;
+}
+
+footer {
+	flex-shrink: 0;
+	width: 100%;
+	height: 60px;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.center {
+    text-align: center;
+}
+
+.width-50 {
+    max-width: 50%;
+}
+
+.center p {
+    color: gray;
+}
+
+.mg-1 {
+    margin-top: 1rem;
+}
