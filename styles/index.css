@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Roboto;
+  src: url("/Roboto/Roboto-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.section-1 {
+  background-color: #EEEFF1;
+  padding: 5rem;
+  padding-left: 15vw;
+}
+.section-1__container {
+  max-width: 583.3333333333px;
+}
+.section-1 a {
+  color: black;
+  text-decoration: none;
+}
+.section-1 a:first-child, .section-1 a:hover {
+  color: #34547A;
+}
+.section-1 .main-info {
+  margin-top: 5rem;
+}
+.section-1 .main-info h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 78.75px;
+  padding-bottom: 60px;
+}
+.section-1 .main-info p {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+}
+.section-1 .main-info button {
+  background-color: #34547A;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  font-size: 16;
+  font-weight: 400;
+  line-height: 26.25px;
+}
+.section-1 .main-info button:hover {
+  background-color: #273f5d;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

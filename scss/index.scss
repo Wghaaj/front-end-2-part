@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+@font-face {
+    font-family: Roboto;
+    src: url("/Roboto/Roboto-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+@mixin fonts($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+.section-1 {
+    background-color: $bg-gray;
+    padding: 5rem;
+    padding-left: 15vw;
+
+    &__container {
+        max-width: $container-width /1.2;
+        // margin: 0 auto;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+
+        &:first-child, &:hover {
+            color: $main-blue;
+        }
+    }
+
+    .main-info {
+        margin-top: 5rem;
+
+        h1 {
+            @include fonts(48px,700,78.75px );
+            padding-bottom: 60px;
+        }
+
+        p {
+            color: $gray;
+            @include fonts(16px,400,26.25px);
+        }
+
+        button {
+            background-color: $main-blue;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            margin-top: 2rem;
+
+            &:hover {
+                background-color: $main-blue-dark;
+            }
+            @include fonts(16,400 ,26.25px )
+        }
+    }
+
+    
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
