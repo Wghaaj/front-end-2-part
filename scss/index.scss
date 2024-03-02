@@ -28,9 +28,14 @@
         // margin: 0 auto;
     }
 
+    .dropbtn {
+        display: none;
+    }
+
     a {
         color: black;
         text-decoration: none;
+        margin-right: 2rem;
 
         &:first-child, &:hover {
             color: $main-blue;
@@ -64,6 +69,42 @@
         }
     }
 
+    @media screen and (max-width: 775px) {
+        .d-flex {
+          flex-direction: column; 
+        }
+    
+        a {
+          margin-right: 0; 
+          margin-bottom: 1rem; 
+        }
+    
+        .dropbtn {
+          display: block;
+          border: 2px solid black;
+          padding: 0.5rem;
+          border-radius: 20px;
+          color: $main-blue;
+          @include fonts(16px,500, 26.25px);
+          background-color: transparent;
+        }
+    
+        .dropdown-content {
+          position: static; 
+          display: none;
+          z-index: 1;
+    
+          a {
+            display: block; 
+            width: 100%; 
+            padding: 1rem; 
+          }
+        }
+    
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    }
     
 }
 
@@ -72,9 +113,93 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.section-2 {
+    padding: 3rem;
+    text-align: center;
 
+    &__container {
+        max-width: $container-width /1.2;
+        margin: 0 auto;
+    }
 
+    h2 {
+        padding-bottom: 3rem;
+        @include fonts(32px,500 ,37.5px )
+    }
+
+    p {
+        color: $gray;
+        @include fonts(16px,400 ,26.25px )
+    }
+
+    .video {
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width:630px) {
+       iframe {
+        max-width: 80vw;
+       }
+    }
+
+}
+
+.section-3 {
+    padding: 3rem;
+    background-color: $main-blue;
+
+    &__container {
+        max-width: $container-width / 0.8;
+        margin: 0 auto;
+
+        @media screen and (max-width:900px) {
+            max-width: $container-width/1.5;
+        }
+
+        @media screen and (max-width: 500px) {
+            max-width: $container-width/2;
+        }
+    }
+
+    .box {
+        display: flex;
+        text-align: left;
+
+        .inner-text {
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width:900px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    h3, p {
+        color: white;
+    }
+
+}
+
+footer {
+    background-color: $main-blue;
+    padding: 2rem;
+    color: white;
+
+    .container {
+        max-width: $container-width;
+        margin: 0 auto;
+        text-align: left;
+
+    }
+
+    p {
+        padding-top: 1rem;
+        @include fonts(13,400 ,21.33px )
+    }
+}
 
 
