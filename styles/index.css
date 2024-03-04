@@ -1,1 +1,29 @@
-/*# sourceMappingURL=index.css.map */
+body {
+  background-color: #000;
+  color: white;
+}
+
+.tabs-section {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 3rem;
+}
+.tabs-section button {
+  background: transparent;
+  border: 1px dashed white;
+  color: white;
+  border-radius: 1rem;
+  padding: 10px 30px;
+  margin-right: 1rem;
+}
+
+.first-section .tab-pane {
+  display: none;
+}
+.first-section .active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}/*# sourceMappingURL=index.css.map */
