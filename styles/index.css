@@ -20,7 +20,7 @@
   padding: 5rem;
 }
 .section-1__container {
-  max-width: 1080px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 .section-1 .dropbtn {
@@ -36,7 +36,7 @@
 }
 .section-1 .main-info {
   margin-top: 5rem;
-  max-width: 540px;
+  max-width: 1110px;
 }
 .section-1 .main-info h1 {
   font-size: 48px;
@@ -129,7 +129,7 @@
   margin-bottom: 100px;
 }
 .section-2__container {
-  max-width: 540px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 .section-2 .video {
@@ -168,22 +168,22 @@
   }
 }
 .section-3__container {
-  max-width: 1080px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 @media screen and (max-width: 940px) {
   .section-3__container {
-    max-width: 432px;
+    max-width: 1110px;
   }
 }
 @media screen and (max-width: 550px) {
   .section-3__container {
-    max-width: 540px;
+    max-width: 1110px;
   }
 }
 @media screen and (max-width: 500px) {
   .section-3__container {
-    max-width: 360px;
+    max-width: 1110px;
   }
 }
 .section-3 .box {
@@ -208,7 +208,7 @@ footer {
   color: white;
 }
 footer .container {
-  max-width: 1080px;
+  max-width: 2220px;
   margin: 0 auto;
   text-align: left;
 }

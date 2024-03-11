@@ -31,7 +31,7 @@
     // padding-left: 15vw;
 
     &__container {
-        max-width: $container-width*2;
+        max-width: $container-width;
         margin: 0 auto;
     }
 
@@ -184,11 +184,11 @@
     }
 
     &__container {
-        max-width: $container-width*2;
+        max-width: $container-width;
         margin: 0 auto;
 
         @media screen and (max-width:940px) {
-            max-width: $container-width*0.8;
+            max-width: $container-width;
         }
 
         @media screen and (max-width: 550px) {
@@ -196,7 +196,7 @@
         }
 
         @media screen and (max-width: 500px) {
-            max-width: $container-width/1.5;
+            max-width: $container-width;
         }
     }
 
