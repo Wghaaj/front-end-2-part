@@ -3,3 +3,85 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-blue: rgb(29, 29, 228) ;
+}
+
+.line {
+  border-color: var(--main-blue);
+  height: 0.8rem;
+  background-color: var(--main-blue);
+}
+
+.topmenu {
+  background-color: black;
+  display: flex;
+}
+
+.element:hover {
+  background-color: var(--main-blue);
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.plus::after {
+  content: '+';
+  color: white;
+  margin-left: 1rem;
+}
+
+.blue-link {
+  background-color: var(--main-blue);
+}
+
+.blue-link:hover {
+  background-color: rgb(58, 58, 219);
+}
+
+.link {
+  border: 1px solid black;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 5;
+  display: none;
+  min-width: max-content;
+}
+
+.inner-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  min-width: max-content;
+
+}
+
+.rel {
+  position: relative;
+}
+
+.topmenu li:hover > .submenu {
+  display: block;
+}
+
+.submenu li:hover > .inner-submenu {
+  display: block;
+}
+
+.submenu.hide-submenu {
+  display: none;
+}
+
+
