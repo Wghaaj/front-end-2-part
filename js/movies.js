@@ -23455,5 +23455,3 @@ const movies = [
     "extract": "The Color Purple is an upcoming American musical coming-of-age period drama film directed by Blitz Bazawule and adapted for the screen by Marcus Gardley from the 2005 stage musical of the same name, which is in turn based on Alice Walker's 1982 Pulitzer Prize-winning novel of the same name. It is the second film adaptation of the novel, following Steven Spielberg's 1985 film adaptation. Spielberg and Quincy Jones return to produce this version, along with the stage musical's producers Scott Sanders and Oprah Winfrey, the latter of whom also starred in the 1985 film as Sofia."
   }
 ]
-
-console.log("it works as well");
