@@ -12,7 +12,7 @@
 
 .d-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
 }
@@ -63,12 +63,12 @@ main {
 
 .card {
   width: 18rem;
-  height: 18rem;
+  height: 20rem;
   border: 2px solid black;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 1px 2px 14px black;
-  padding: 1rem 0rem;
+  padding: 1rem 0.5rem;
 }
 
 .card img {
@@ -77,10 +77,11 @@ main {
 
 .description p {
   width: 15rem;
-  max-height: 3.5rem; 
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
 }
 
 .title {
@@ -90,7 +91,7 @@ main {
 
 .description {
   width: 15rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   margin-top: 0.5rem;
 }
 
