@@ -43,7 +43,7 @@ const filtered = movies.filter(function(movie) {
     return movie.genres.includes("Action")
 })
 
-console.log(filtered);
+console.log("Filtered: ",filtered);
 
 const genres = movies.reduce(function (acc, movie) {
     movie.genres.forEach(function(genre) {
@@ -54,4 +54,4 @@ const genres = movies.reduce(function (acc, movie) {
     return acc
 }, [])
 
-console.log(genres);
+console.log("Genres: ",genres);
