@@ -7,7 +7,7 @@ const favourites = sorted.slice(0,16)
 // console.log(favourites);
 
 const cardTitles = document.querySelectorAll(".title p")
-favourites.forEach((movies, index) => {
+newSorted.forEach((movies, index) => {
     if (index < cardTitles.length) {
         cardTitles[index].textContent = movies.title
     }
