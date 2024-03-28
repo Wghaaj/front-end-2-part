@@ -1,4 +1,4 @@
-const loged = [
+const logedUsers = [
   {
     "user_id": "583c3ac3f38e84297c002546",
     "email": "test@test.com",

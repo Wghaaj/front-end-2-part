@@ -1,4 +1,4 @@
-const gen = [
+const generalUsers = [
   {
     "id": 1,
     "firstName": "Terry",
