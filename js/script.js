@@ -61,7 +61,7 @@ closest.forEach(item => {
     <p>Age : ${item.age}</p>
     <p>Email : <a href = "mailto: ${item.email}" >${item.email}</a></p>
     <p>City : ${item.address.city} </p>
-    <p>Phone :<a href = "tel:${item.phone}"></a> ${item.phone} </p>`
+    <p>Phone :<a href = "tel:${item.phone}">${item.phone}</a> </p>`
 
     cardContainer.append(cardInfo)
     wrapper.append(cardContainer)
