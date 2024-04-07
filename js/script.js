@@ -101,26 +101,6 @@ class Student extends User {
     };
 };
 
-
-const student = new Student ("Diana", "Kravchuk", 2008)
-console.log(student.fullName);
-console.log(student.age);
-student.present();
-student.present();
-student.absent();
-student.absent();
-student.present();
-student.setMark(10);
-student.setMark(9);
-student.setMark(8);
-student.setMark(10);
-student.setMark(9);
-console.log(student._mark);
-console.log(student._presence);
-console.log(student.mediumMark());
-console.log(student.mediumVisit());
-student.summary()
-
 class Teacher extends Student {
     _groups;
 
@@ -148,12 +128,3 @@ class Teacher extends Student {
         return this._groups.filter(group => group.active);
     }
 };
-
-const teacher = new Teacher("John", "Doe", 1985);
-teacher.addGroups({ name: "Group 1", active: true });
-teacher.addGroups({ name: "Group 2", active: false });
-teacher.addGroups({ name: "Group 3", active: true });
-teacher.changeStatus({ name: "Group 3", active: false });
-teacher.changeStatus({ name: "Group 2", active: true });
-console.log(teacher.groups);
-console.log(teacher.activeGroups);
