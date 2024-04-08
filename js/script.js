@@ -58,6 +58,7 @@ function updateTimerDisplay() {
 startBtn.addEventListener('click', () => {
     countValue = parseInt(count.value); 
     if (countValue > 0 && !intervalId) {
+        clearInterval(intervalId);
         updateTimerDisplay();
         startTimer();
         startBtn.style.display = 'none';
