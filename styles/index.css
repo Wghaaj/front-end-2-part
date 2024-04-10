@@ -1,0 +1,134 @@
+.text-gradient {
+  background-image: linear-gradient(45deg, rgb(240, 20, 90), rgb(239, 128, 128));
+  background-color: #F0145A;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  color: #323264;
+}
+
+.container {
+  margin-top: 3.125rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  align-items: center;
+  max-width: 91.6vw;
+  margin: 0 auto;
+}
+.wrapper .team-text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.88px;
+  color: #323264;
+  padding-left: 4px;
+}
+.wrapper .max-60 {
+  max-height: 60px;
+}
+.wrapper .max-47 {
+  max-height: 47px;
+}
+.wrapper .flex {
+  display: flex;
+  align-items: center;
+}
+.wrapper .top .link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  color: #B3B3BA;
+  padding: 5px 7px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.wrapper .top .link:hover {
+  background-color: #F5F5FA;
+}
+.wrapper .top .active-link {
+  background-color: #F0145A;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  color: white;
+  padding: 5px 7px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 6px;
+}
+.wrapper .top p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #B3B3BA;
+  margin: 0 6px;
+}
+.wrapper .top p .link {
+  font-size: 16px;
+  padding: 0;
+}
+.wrapper .top .facebook {
+  width: 24px;
+  height: 24px;
+  margin: 0 6px;
+  background-color: #B3B3BA;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: white;
+}
+.wrapper .top .facebook:hover {
+  background-color: #F0145A;
+}
+.wrapper .top .facebook span {
+  position: relative;
+  top: 6px;
+}
+.wrapper .bottom {
+  margin-top: 16px;
+  max-width: 445px;
+}
+.wrapper .bottom a {
+  margin-left: 15px;
+}
+.wrapper .bottom .link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #24A3FF;
+  padding-bottom: 3px;
+}
+.wrapper .bottom .link:hover {
+  text-decoration: underline;
+  text-decoration-color: #24A3FF;
+  text-underline-offset: 3px;
+}
+.wrapper .bottom .active {
+  text-decoration: underline;
+  text-decoration-color: #F0145A;
+  text-underline-offset: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #F0145A;
+}
+
+.seperator {
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 3px;
+}
