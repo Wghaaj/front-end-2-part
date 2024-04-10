@@ -1,0 +1,53 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 3.125rem;
+}
+footer .container {
+  background-color: #F5F5FA;
+  padding: 30px 60px;
+}
+footer .left {
+  align-items: center;
+}
+footer .map {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  color: #24A3FF;
+  text-decoration: none;
+}
+footer .right {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #B3B3BA;
+}
+footer .bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+footer .bottom .facebook {
+  width: 24px;
+  height: 24px;
+}
+footer .bottom a {
+  text-decoration: none;
+}
+footer .bottom .link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #323264;
+}
+footer .bottom .blue-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #24A3FF;
+}
+footer .seperator {
+  background-color: #B3B3BA;
+}

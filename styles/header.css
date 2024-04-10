@@ -1,0 +1,137 @@
+.text-gradient {
+  background-image: linear-gradient(45deg, rgb(240, 20, 90), rgb(239, 128, 128));
+  background-color: #F0145A;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  color: #323264;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .d-flex {
+    justify-content: flex-start;
+  }
+}
+
+.wrapper {
+  align-items: center;
+  max-width: 91.6vw;
+  margin: 0 auto;
+}
+
+header .container {
+  padding-top: 3.125rem;
+}
+header .wrapper .team-text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.88px;
+  color: #323264;
+  padding-left: 4px;
+}
+header .wrapper .max-60 {
+  max-height: 60px;
+}
+header .wrapper .max-47 {
+  max-height: 47px;
+}
+header .wrapper .flex {
+  display: flex;
+  align-items: center;
+}
+header .wrapper .top .link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  color: #B3B3BA;
+  padding: 5px 7px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+header .wrapper .top .link:hover {
+  background-color: #F5F5FA;
+}
+header .wrapper .top .active-link {
+  background-color: #F0145A;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  color: white;
+  padding: 5px 7px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+header .wrapper .top p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #B3B3BA;
+}
+header .wrapper .top p .link {
+  font-size: 16px;
+  padding: 0;
+}
+header .wrapper .top .facebook {
+  width: 24px;
+  height: 24px;
+  background-color: #B3B3BA;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: white;
+}
+header .wrapper .top .facebook:hover {
+  background-color: #F0145A;
+}
+header .wrapper .top .facebook span {
+  position: relative;
+  top: 6px;
+}
+header .wrapper .bottom {
+  margin-top: 16px;
+  max-width: 445px;
+}
+header .wrapper .bottom a {
+  margin-left: 15px;
+}
+header .wrapper .bottom .link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #24A3FF;
+  padding-bottom: 3px;
+}
+header .wrapper .bottom .link:hover {
+  text-decoration: underline;
+  text-decoration-color: #24A3FF;
+  text-underline-offset: 3px;
+}
+header .wrapper .bottom .active {
+  text-decoration: underline;
+  text-decoration-color: #F0145A;
+  text-underline-offset: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #F0145A;
+}
+
+.seperator {
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 3px;
+  margin: 0 6px;
+}
