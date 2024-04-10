@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+@mixin fonts($cl, $fs, $fw, $lh){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $cl;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3.125rem;
+    
+    .container {
+        background-color: $grey-bg;
+        padding: 30px 60px;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .map {
+        @include fonts($active-regular, 12px, 700, 14.63px);
+        text-decoration: none;
+    }
+
+    .right {
+        @include fonts($grey-text, 16px, 400, 19.5px);
+    
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+
+        .facebook {
+            width: 24px;
+            height: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .link {
+            @include fonts($main-blue, 16px, 700, 19.5px)
+        }
+
+        .blue-link {
+            @include fonts($active-regular, 16px, 700, 19.5px)
+            
+        }
+    }
+
+    .seperator {
+        background-color: $grey-text;
+    }
+}
