@@ -1,0 +1,88 @@
+@use "variables" as *;
+
+@mixin fonts($cl, $fs, $fw, $lh){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $cl;
+}
+
+main {
+    .container {
+        max-width: $container-width;
+        margin: 0 auto;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc((100% - #{$common-margin} * 2) / 3), 1fr)); 
+    gap: $common-margin;
+
+    @media screen and (max-width:900px) {
+        grid-template-columns: repeat(auto-fill, minmax(calc((100% - #{$common-margin}) / 2), 1fr)); 
+    }
+
+    @media screen and (max-width: 500px) {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
+            gap: 30px;
+    }
+
+}
+
+.grid-item {
+    max-width: 27.8vw;
+    border-radius: 12px;
+    @media screen and (max-width:900px) {
+        max-width: none;
+    }
+
+    @media screen and (max-width:500px) {
+        max-height: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+
+        @media screen and (min-width: 1840px) {
+            min-width: 100%;
+        }
+    }
+
+    p {
+        @include fonts($grey-text, 14px, 400, 22px);
+    }
+
+    .flex {
+        justify-content: space-between;
+        margin-top: 15px;
+
+        @media screen and (min-width: 1840px) {
+            p, h4 {
+            font-size: calc(14 * 10%);
+            }
+        }
+    }
+
+}
+
+.active-arrow:hover svg path {
+    stroke:$accent
+}
+
+.about {
+    padding: 0 180px;
+    @include fonts(inherit, 38px, 700, 46.32px);
+    margin-top:$common-margin;
+    margin-bottom: $common-margin;
+
+    @media screen and (max-width:1195px) {
+        padding: 0 60px;
+    }
+
+    @media screen and (max-width:500px) {
+        padding: 0 30px;
+    }
+}

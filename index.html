@@ -3,9 +3,10 @@
     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Team</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -13,60 +14,192 @@
     <body>
         <header>
             <div class="container">
-                <div class="wrapper d-flex">
-                    <div class="left d-flex">
-                        <img class="max-60" src="images/Logo.jpg" alt="logo">
-                        <img class="max-47" src="images/Slash.png" alt="slash">
-                        <p class="team-text">team</p>
+                <div class="wrapper">
+                    <div class="logo flex">
+                        <div class="flex">
+                            <img class="logo-pic" src="images/Logo.jpg" alt="logo">
+                            <img class="slash" src="images/Slash.png" alt="slash">
+                            <p class="team">team</p>
+                        </div>
+                        <div class="burger">
+                            <span></span>
+                        </div>
                     </div>
-                        <div class="right">
-                            <div class="top flex">
-                                <div>
-                                    <a class="link" href="">УК</a>
-                                    <a class="link" href="">РУ</a>
-                                    <a class="active-link" href="">EN</a>
-                                </div>
-                                <div class="seperator"></div>
-                                    <p>Kyiv, Mechnikova str, 14/1</p>
-                                <div class="seperator"></div>
-                                <p> <a class="link" href="tel: 0800 211 927">0800 211 927</a></p>
-                                <div class="seperator"></div>
-                                <p class="facebook"><span>f</span></p>
+                    <div class="details flex ">
+                        <div>
+                            <a href="#" class="link">УК</a>
+                            <a href="#" class="link">РУ</a>
+                            <a href="#" class="link active">EN</a>
+                        </div>
+                        <div class="seperator"></div>
+                        <p class="font-16">Kyiv, Mechnikova str, 14/1</p>
+                        <div class="seperator"></div>
+                        <a class="font-16 tel" href="tel :0800 211 927">0800 211 927</a>
+                        <div class="seperator"></div>
+                        <a class="social" href="https://www.facebook.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_22721_6686)">
+                                <path d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" fill="#B3B3BA"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_22721_6686">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg> 
+                        </a>                           
+                    </div>
+                    <nav class="navigation">
+                        <ul class="font-16 flex">
+                            <li class="li">about us</li>
+                            <li class="li">services</li>
+                            <li class="li" id="link-active">team</li>
+                            <li class="li">publications</li>
+                            <li class="li">contact us</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>    
+        </header>
+        <main>
+            <div class="container">
+                <div class="about">
+                    <p class="text-gradient">We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.</p>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="/images/Team-1.jpg" alt="team-1">
+                        <div class="flex">
+                            <div>
+                                <h4>Alexander Alexandrovsky</h4>
+                                <p>Managing partner</p>
                             </div>
-                            <div class="bottom">
-                                <a class="link" href="#">about us</a>
-                                <a class="link" href="#">services</a>
-                                <a class="active" href="#">team</a>
-                                <a class="link" href="#">publications</a>
-                                <a class="link" href="#">contact</a>
+                            <div>
+                                <a class="active-arrow" href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
+                                    <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/images/Team-2.jpg" alt="team-2">
+                        <div class="flex">
+                            <div>
+                                <h4>Alexander Alexandrovsky</h4>
+                                <p>Managing partner</p>
+                            </div>
+                            <div>
+                                <a class="active-arrow" href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
+                                    <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/images/Team-3.jpg" alt="team-3">
+                        <div class="flex">
+                            <div>
+                                <h4>Alexander Alexandrovsky</h4>
+                                <p>Managing partner</p>
+                            </div>
+                            <div>
+                                <a class="active-arrow" href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
+                                    <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/images/Team-4.jpg" alt="team-4">
+                        <div class="flex">
+                            <div>
+                                <h4>Alexander Alexandrovsky</h4>
+                                <p>Managing partner</p>
+                            </div>
+                            <div>
+                                <a class="active-arrow" href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
+                                    <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/images/Team-5.jpg" alt="Team-5">
+                        <div class="flex">
+                            <div>
+                                <h4>Alexander Alexandrovsky</h4>
+                                <p>Managing partner</p>
+                            </div>
+                            <div>
+                                <a class="active-arrow" href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
+                                    <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/images/Team-6.jpg" alt="team-6">
+                        <div class="flex">
+                            <div>
+                                <h4>Alexander Alexandrovsky</h4>
+                                <p>Managing partner</p>
+                            </div>
+                            <div>
+                                <a class="active-arrow" href="#">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
+                                    <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-        </header>
-        <main>
-
+            </div>
         </main>
     <footer>
         <div class="container">
             <div class="wrapper">
-                <div class="top d-flex">
-                    <div class="left d-flex">
-                        <p>Kyiv, Mechnikova str, 14/1</p>
-                        <div class="seperator"></div>
-                        <a class="map" href="#">ON MAP</a>
-                    </div>
-                    <div class="right">
-                        <p>© 2021 HLEGAL Law company, LLC</p>
-                    </div>
-                    
+                <div class="left flex">
+                    <p class="font-16 street">Kyiv, Mechnikova str, 14/1</p>
+                    <div class="seperator"></div>
+                    <a href="https://maps.app.goo.gl/Zw4MKvHGfPZktKgB7" class="map">ON MAP</a>
                 </div>
-                <div class="bottom">
-                    <img class="facebook" src="images/Facebook-Footer.png" alt="facebook-footer">
+                <div class="right flex">
+                    <p class="font-16">© 2021 HLEGAL Law company, LLC</p>
+                </div>
+                <div class="bottom flex">
+                    <a class="social" href="https://www.facebook.com/">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22721_8205)">
+                            <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_22721_8205">
+                            <rect width="38" height="38" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>                            
+                    </a>
                     <div class="seperator"></div>
-                    <a class="link" href="tel: 0800 211 927">0800 211 927</a>
+                    <a class="font-16 tel" href="tel :0800 211 927">0800 211 927</a>
                     <div class="seperator"></div>
-                    <a class="blue-link" href="mailto: contact@forstudy.space">contact@forstudy.space</a>
+                    <a class="map" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
                 </div>
             </div>
         </div>
