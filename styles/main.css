@@ -20,6 +20,10 @@ main .container {
   }
 }
 
+.none {
+  display: none;
+}
+
 .grid-item {
   max-width: 27.8vw;
   border-radius: 12px;
