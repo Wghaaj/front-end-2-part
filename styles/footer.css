@@ -6,7 +6,7 @@ footer .container {
   padding: 30px 60px;
 }
 footer .wrapper {
-  max-width: 91.6vw;
+  max-width: 1600px;
   display: grid;
   grid-template-areas: "a b" "c b";
   grid-template-columns: 2fr;

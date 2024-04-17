@@ -16,8 +16,9 @@ html {
 }
 
 header .wrapper {
-  max-width: 91.6vw;
-  margin: 50px 60px 0 60px;
+  max-width: 1600px;
+  padding: 50px 60px 0;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: "a b" "a c";
   grid-template-columns: 2fr;
@@ -125,7 +126,7 @@ header .wrapper {
   color: #F0145A;
   text-decoration: underline;
   text-decoration-color: #F0145A;
-  text-underline-offset: 3px;
+  text-underline-offset: 5px;
 }
 
 .navigation {
@@ -161,7 +162,7 @@ header .wrapper {
 .li:hover {
   text-decoration: underline;
   text-decoration-color: #24A3FF;
-  text-underline-offset: 3px;
+  text-underline-offset: 5px;
 }
 
 ul {

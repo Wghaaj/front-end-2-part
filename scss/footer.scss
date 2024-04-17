@@ -15,7 +15,7 @@ footer {
         padding: 30px 60px;
     }
     .wrapper {
-        max-width: $container-width;
+        max-width: $big-container-width;
         display: grid;
         grid-template-areas: "a b"
         "c b";

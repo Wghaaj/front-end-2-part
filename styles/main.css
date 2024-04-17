@@ -1,22 +1,30 @@
 main .container {
-  max-width: 91.6vw;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc((100% - 60px * 2) / 3), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(calc((100% - 60px) * 2 / 7), 1fr));
   gap: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 50px 60px 0;
 }
 @media screen and (max-width: 900px) {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(calc((100% - 60px) / 2), 1fr));
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     gap: 30px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .grid-container {
+    max-width: 1360px;
   }
 }
 
@@ -25,8 +33,13 @@ main .container {
 }
 
 .grid-item {
-  max-width: 27.8vw;
   border-radius: 12px;
+}
+.grid-item:hover {
+  color: #F0145A;
+}
+.grid-item:hover svg path {
+  stroke: #F0145A;
 }
 @media screen and (max-width: 900px) {
   .grid-item {
@@ -40,13 +53,8 @@ main .container {
 }
 .grid-item img {
   max-width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 12px;
-}
-@media screen and (min-width: 1840px) {
-  .grid-item img {
-    min-width: 100%;
-  }
 }
 .grid-item p {
   font-size: 14px;
@@ -57,6 +65,7 @@ main .container {
 .grid-item .flex {
   justify-content: space-between;
   margin-top: 15px;
+  max-width: 400px;
 }
 @media screen and (min-width: 1840px) {
   .grid-item .flex p, .grid-item .flex h4 {
@@ -64,26 +73,37 @@ main .container {
   }
 }
 
-.active-arrow:hover svg path {
-  stroke: #F0145A;
-}
-
 .about {
-  padding: 0 180px;
+  max-width: 1360px;
   font-size: 38px;
   font-weight: 700;
   line-height: 46.32px;
   color: inherit;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 0 auto;
+  padding: 60px 0;
 }
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 1600px) {
   .about {
-    padding: 0 60px;
+    max-width: 75%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .about {
-    padding: 0 30px;
+    max-width: 664px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    max-width: 648px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .about {
+    max-width: 82%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about {
+    max-width: 315px;
   }
 }

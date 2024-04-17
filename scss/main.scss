@@ -9,23 +9,30 @@
 
 main {
     .container {
-        max-width: $container-width;
+        max-width: $big-container-width;
         margin: 0 auto;
     }
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc((100% - #{$common-margin} * 2) / 3), 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(calc(((100% - 60px) *2) / 7), 1fr)); 
     gap: $common-margin;
+    max-width: $big-container-width;
+    margin: 0 auto;
+    padding: 50px 60px 0;
 
     @media screen and (max-width:900px) {
-        grid-template-columns: repeat(auto-fill, minmax(calc((100% - #{$common-margin}) / 2), 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(calc((100% - 60px) / 2), 1fr)); 
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 650px) {
             grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
             gap: 30px;
+    }
+
+    @media screen and (max-width:1440px) {
+        max-width: $small-container-width;
     }
 
 }
@@ -35,8 +42,16 @@ main {
 }
 
 .grid-item {
-    max-width: 27.8vw;
+    // max-width: 27.8vw;
     border-radius: 12px;
+
+    &:hover  {
+        color: $accent;
+        
+        svg path {
+            stroke: $accent;
+        }
+    }
     @media screen and (max-width:900px) {
         max-width: none;
     }
@@ -47,12 +62,12 @@ main {
 
     img {
         max-width: 100%;
-        height: auto;
+        height: 400px;
         border-radius: 12px;
 
-        @media screen and (min-width: 1840px) {
-            min-width: 100%;
-        }
+        // @media screen and (max-width:650px) {
+        //     height: 300px;
+        // }
     }
 
     p {
@@ -62,6 +77,7 @@ main {
     .flex {
         justify-content: space-between;
         margin-top: 15px;
+        max-width: 400px;
 
         @media screen and (min-width: 1840px) {
             p, h4 {
@@ -72,21 +88,30 @@ main {
 
 }
 
-.active-arrow:hover svg path {
-    stroke:$accent
-}
-
 .about {
-    padding: 0 180px;
+    max-width: $small-container-width;
     @include fonts(inherit, 38px, 700, 46.32px);
-    margin-top:$common-margin;
-    margin-bottom: $common-margin;
-
-    @media screen and (max-width:1195px) {
-        padding: 0 60px;
+    margin: 0 auto;
+    padding: 60px 0;
+    
+    @media screen and (max-width:1600px) {
+        max-width: 75%;
     }
 
-    @media screen and (max-width:500px) {
-        padding: 0 30px;
+    @media screen and (max-width:1024px) {
+        max-width: 664px;
     }
+
+    @media screen and (max-width:768px) {
+        max-width: 648px;
+    }
+
+    @media screen and (max-width:760px) {
+        max-width: 82%;
+    }
+
+    @media screen and (max-width:375px) {
+        max-width: 315px;
+    }
+
 }
