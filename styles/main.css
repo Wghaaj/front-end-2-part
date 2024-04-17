@@ -20,6 +20,7 @@ main .container {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     gap: 30px;
+    padding: 0 15px 0 30px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -53,7 +54,7 @@ main .container {
 }
 .grid-item img {
   max-width: 100%;
-  height: 400px;
+  height: auto;
   border-radius: 12px;
 }
 .grid-item p {
