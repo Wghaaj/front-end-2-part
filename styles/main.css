@@ -23,6 +23,11 @@ main .container {
     padding: 0 15px 0 30px;
   }
 }
+@media screen and (max-width: 400px) {
+  .grid-container {
+    padding: 0 15px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .grid-container {
     max-width: 1360px;
@@ -45,11 +50,7 @@ main .container {
 @media screen and (max-width: 900px) {
   .grid-item {
     max-width: none;
-  }
-}
-@media screen and (max-width: 500px) {
-  .grid-item {
-    max-height: none;
+    margin: 0 auto;
   }
 }
 .grid-item img {
@@ -81,30 +82,5 @@ main .container {
   line-height: 46.32px;
   color: inherit;
   margin: 0 auto;
-  padding: 60px 0;
-}
-@media screen and (max-width: 1600px) {
-  .about {
-    max-width: 75%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .about {
-    max-width: 664px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about {
-    max-width: 648px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .about {
-    max-width: 82%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .about {
-    max-width: 315px;
-  }
+  padding: 60px 30px;
 }

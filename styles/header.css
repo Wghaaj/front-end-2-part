@@ -3,6 +3,9 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+.text-gradient__innner {
+  font-size: 2.375em;
+}
 
 html {
   color: #323264;
@@ -28,10 +31,22 @@ header .wrapper {
     grid-template-areas: "b" "a" "c";
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   header .wrapper {
     margin: 0;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .wrapper {
     padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .svg-logo {
+    max-height: 32px;
+    max-width: 69.33px;
   }
 }
 
@@ -42,20 +57,20 @@ header .wrapper {
   color: #323264;
   padding-left: 4px;
 }
+@media screen and (max-width: 650px) {
+  .team {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+}
 
 .logo {
   grid-area: a;
-  padding: 5px 7px;
   justify-content: space-between;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .logo {
     padding: 15px 0 10px 0;
-  }
-}
-@media screen and (max-width: 340px) {
-  .logo {
-    height: 18vh;
   }
 }
 
@@ -71,6 +86,11 @@ header .wrapper {
 .slash {
   max-height: 47px;
   padding-left: 4px;
+}
+@media screen and (max-width: 650px) {
+  .slash {
+    max-height: 26px;
+  }
 }
 
 .flex {
