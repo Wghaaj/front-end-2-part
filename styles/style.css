@@ -39,26 +39,3 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.container {
-  width: 100%;
-  max-width: calc(var(--container-width) + var(--basic-space) * 2);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
-  position: relative;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.py-rem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}

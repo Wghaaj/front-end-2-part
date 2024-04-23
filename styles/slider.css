@@ -2,17 +2,56 @@
   display: none;
 }
 
+.slider {
+  margin-top: 1rem;
+}
+
 .slider .slide-item.active {
   display: block;
+}
+
+.slider img {
+  max-height: 40vh;
+  width: 50vw;
 }
 
 .navigation {
   display: flex;
   gap: 1rem;
+  position: fixed;
+  left: 20%;
 }
+
 
 .navigation button {
   padding: 0 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-top: 1rem;
+}
+
+.dots-container {
+  position: fixed;
+  top: 44%;
+  left: 20%;
+} 
+
+.dots-container button {
+  padding: 0  0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dot {
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.active-dot {
+  background-color: white;
 }
