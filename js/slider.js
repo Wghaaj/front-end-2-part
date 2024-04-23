@@ -77,7 +77,6 @@ class Slider {
       this.nextNav.addEventListener('click', () => this.nextSlide());
       navWrapper.appendChild(this.prevNav);
       navWrapper.appendChild(this.nextNav);
-
       const dotsContainer = document.createElement('div');
       dotsContainer.classList.add('dots-container');
       for (let i = 0; i < this.dots; i++) {
@@ -90,6 +89,7 @@ class Slider {
 
       this.slider.appendChild(navWrapper);
       this.updateDots();
+
   }
 
   renderSlides() {

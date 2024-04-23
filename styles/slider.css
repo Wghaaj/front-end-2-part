@@ -31,9 +31,9 @@
 }
 
 .dots-container {
-  position: fixed;
-  top: 44%;
-  left: 20%;
+  position: absolute;
+  display: flex;
+  bottom: 4rem;
 } 
 
 .dots-container button {
