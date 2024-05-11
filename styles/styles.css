@@ -1,23 +1,31 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --basic-font-family: "Roboto", sans-serif;
-  --basic-font-size: 16px;
-  --basic-font-weight: 400;
-  --basic-line-height: 1.5;
-  --basic-text-color: #202020;
-  --container-width: 1110px;
-  --basic-space: 1rem;
+  --basic-font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-family: var(--basic-font-family);
-  font-size: var(--basic-font-size);
-  font-weight: var(--basic-font-weight);
-  line-height: var(--basic-line-height);
-  color: var(--basic-text-color);
+  height: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header,
+footer {
+flex: 0 0 auto ;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+

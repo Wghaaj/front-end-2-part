@@ -1,0 +1,110 @@
+@use "variables" as *;
+
+@mixin fonts($cl, $fs, $fw, $lh){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $cl;
+}
+
+footer {
+    background-color: $grey-bg;
+    margin-top: $common-margin;
+
+    .container {
+        padding: 30px 60px;
+    }
+    .wrapper {
+        max-width: $big-container-width;
+        display: grid;
+        grid-template-areas: "a b"
+        "c b";
+        grid-template-columns: 2fr;
+        border-top: 2px solid $grey-seperator;
+        padding-top: calc($common-margin /2);
+        margin: 0 auto;
+
+        @media screen and (max-width:900px) {
+            grid-template-areas: "a"
+            "c"
+            "b";
+            margin: 0 auto;
+            width: 51.9vw;
+        }
+    } 
+
+    .seperator {
+        background-color: $grey-text;
+    }
+
+    .tel {
+        color: $main-alt;
+        
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    @media screen and (max-width:765px) {
+        .seperator {
+            display: none;
+        }
+
+        .flex {
+            flex-direction: column;
+        }
+
+        .map, .tel {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+.right {
+    grid-area: b;
+    margin-left: 15px;
+
+    @media screen and (max-width:900px) {
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+}
+
+.left {
+    align-items: center;
+    grid-area: a;
+}
+
+.bottom {
+    align-items: center;
+    grid-area: c;
+    margin-top: 21px;
+}
+
+.street {
+    color: $main-blue;
+}
+
+.map {
+    text-decoration: none;
+    @include fonts($active-regular, 12px, 700, 14.63px);
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.bottom .map {
+    font-size: 16px;
+
+    &:hover {
+        color: $accent;
+    }
+
+}
+
+
